@@ -1,0 +1,148 @@
+body {
+    background: linear-gradient(120deg, red 0%, #fecfef 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  body::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 500px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: floating 6s ease-in-out infinite;
+  }
+  
+  body::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    animation: floating 8s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    50% {
+      transform: translateY(-20px) translateX(20px);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+
+  
+  
+  .love-calculator-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  h2{
+    text-align: center;
+    background-color: red;
+    color: white;
+    border:10px solid red ;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-weight: 900;
+    
+  }
+  
+  .mb-3{
+    background-color:#fecfef ;
+    color: #ff5e86;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid #fecfef;
+    margin: 20px;
+  }
+
+  .rounded-input {
+    border: 2px solid #ff5e86;
+    border-radius: 10px;
+    color: #ff5e86;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .btn-primary{
+    text-align: center;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 20px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .glow-on-hover {
+    position: relative;
+    z-index: 0;
+  }
+  
+  .glow-on-hover:hover {
+    box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+  }
+  
+  .result {
+    color: white;
+    background-color: red;
+    border: 10px solid red;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: "Nerko One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+  .result-meter {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    
+  }  
+
+  /*Responsive Media*/
+
+  @media (max-width: 768px) {
+    body {
+      padding: 20px;
+    }
+
+    .love-calculator-card {
+      padding: 20px;
+    }
+  
+    .result{
+      font-size: 22px;
+    }
+  
+  }
+
+@media (max-width: 576px) {
+  .love-calculator-card {
+    padding: 15px;
+  }
+
+  .result {
+    font-size: 20px;
+  }
+
+}
+  

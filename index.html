@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+   </head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="card shadow-lg mt-5 p-4 text-center love-calculator-card">
+              <h2 class="mb-4">Love Calculator <br> ❤️</h2>
+              
+              <!-- Input Fields -->
+              <form id="loveCalculatorForm">
+                <div class="mb-3">
+                  <label for="yourName" class="form-label">Your Name</label>
+                  <input type="text" class="form-control rounded-input" id="yourName" placeholder="" required>
+                </div>
+                <div class="mb-3">
+                  <label for="partnerName" class="form-label">Partner's Name</label>
+                  <input type="text" class="form-control rounded-input" id="partnerName" placeholder="" required>
+                </div>
+    
+                <!-- Relationship Type Dropdown -->
+                <div class="mb-3">
+                  <label for="relationshipType" class="form-label">Relationship Type</label>
+                  <select class="form-select" id="relationshipType">
+                    <option value="friendship">Friendship</option>
+                    <option value="romantic">Romantic</option>
+                    <option value="casual">Casual</option>
+                  </select>
+                </div>
+    
+                <!-- Calculate Button -->
+                <button type="submit" class="btn btn-primary w-100 glow-on-hover">Calculate 💖</button>
+              </form>
+    
+              <!-- Result Display -->
+              <div class="result text-center mt-4" id="result"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="script.js"></script>
+    </body>
+</html>
